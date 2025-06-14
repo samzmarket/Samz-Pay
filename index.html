@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT SAMZ MARKET</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <div class="panel">
+        <h1 class="title">PAYMENT SAMZ MARKET</h1>
+        
+        <div class="payment-option selected" data-type="dana">
+            <div class="payment-icon" style="background: linear-gradient(135deg, #00AAFF, #0085FF);">
+                <i class="fab fa-google-wallet"></i>
+            </div>
+            <div class="payment-details">
+                <div class="payment-name">DANA</div>
+                <div class="payment-number">0823-5361-8930</div>
+            </div>
+            <button class="copy-btn" onclick="copyToClipboard('082353618930')">
+                <i class="fas fa-copy"></i> Salin
+            </button>
+        </div>
+        
+        <div class="payment-option" data-type="gopay">
+            <div class="payment-icon" style="background: linear-gradient(135deg, #00B050, #00A650);">
+                <i class="fas fa-wallet"></i>
+            </div>
+            <div class="payment-details">
+                <div class="payment-name">GOPAY</div>
+                <div class="payment-number">0823-3429-2520</div>
+            </div>
+            <button class="copy-btn" onclick="copyToClipboard('082334292520')">
+                <i class="fas fa-copy"></i> Salin
+            </button>
+        </div>
+        
+        <div class="payment-option" data-type="ovo">
+            <div class="payment-icon" style="background: linear-gradient(135deg, #4E2E8A, #653CAD);">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="payment-details">
+                <div class="payment-name">OVO</div>
+                <div class="payment-number">[ Belum Tersedia ]</div>
+            </div>
+            <button class="copy-btn" onclick="copyToClipboard('[ Belum Tersedia ]')">
+                <i class="fas fa-copy"></i> Salin
+            </button>
+        </div>
+        
+        <div class="payment-option" data-type="qris">
+            <div class="payment-icon" style="background: linear-gradient(135deg, #FF6B00, #FF9500);">
+                <i class="fas fa-qrcode"></i>
+            </div>
+            <div class="payment-details">
+                <div class="payment-name">QRIS</div>
+                <div class="payment-number">Klik Tombol Disamping</div>
+            </div>
+            <button class="copy-btn" onclick="showQRIS()">
+                <i class="fas fa-eye"></i> Lihat
+            </button>
+        </div>
+        
+        <div class="qris-container" id="qrisContainer">
+            <img src="https://files.catbox.moe/t9cki6.png" alt="QRIS Code" class="qris-image">
+            <p class="text-sm text-gray-400">Scan QRIS Untuk Melakukan Pembayaran</p>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 SAMZ MARKET | <a href="https://wa.me/6285718171265" target="_blank">Hubungi Saya</a></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
